@@ -1,0 +1,150 @@
+body {
+    background-color: #f0f3f4 !important;
+    overflow: hidden;
+    max-width: 375px;
+}
+
+p {
+    font-family: Europa, sans-serif;
+    font-weight: 100;
+    font-style: normal;;
+    font-size: 1.2em;
+    color: #303030;
+ }
+
+ .button {
+    background: linear-gradient(to bottom right, rgba(252,152,66,1) 0%, rgba(232,121,71,1) 100%);
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 1.2em;
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.18);
+    border-radius: 50px 50px 50px 50px;
+    border: none;
+    text-align: center;
+    width: 100%;
+    padding: 17px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+ }
+
+ .invoerveld {
+    border-radius: 7pt;
+    background-color: #E5E5E5;
+    font-size: 1.2em;
+    color: #707070;
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.18);
+    border: none;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+ }
+
+input.invoerveld {
+    font-family: Europa-Light;
+    font-size: 1.2em;
+    color: gray;
+}
+
+ h1 {
+    font-size: 1.45em !important;
+    color: #303030;
+    font-family: 'Fauna One', serif !important;
+    text-align: center;
+}
+
+.header {
+    position: absolute;
+    margin-top: -400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+
+  .legecontainer {
+      height: 400px;
+  }
+
+  .logo-met-tekst {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+  }
+
+  .logo-cirkel {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+  }
+
+  .logo-icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+  }
+
+  /* Bedrijfspagina */
+  .back-icon {
+    padding-top: 47px ;
+    padding-left: 40px !important;
+  }
+
+  .logo img {
+  justify-content: center;
+  border-radius: 100px;
+  width: 100%;
+  padding-left: 25%;
+  }
+
+  .score div {
+    border-radius: 100px;
+    background-color: #FFFFFF;
+    /* background: url(...); */
+    width: 29px;
+    height: 29px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+
+  .score p {
+    color: #1167B1 !important;
+    font-weight: 400 !important;
+    font-size: 1em;
+    margin: 0px !important;
+    /* text-align: center; */
+  }
+
+  .score-toelichting p {
+    color: #FFFFFF;
+    font-size: 0.75em !important;
+  }
+
+  .bedrijfsnaam h1{
+    text-align: center;
+    color: #FFFFFF !important;
+    margin-top: 10px !important;
+    margin-bottom: 0px !important;
+  }
+
+  .bedrijfsnaam p{
+    text-align: center;
+    color: #FFFFFF !important;
+    font-size: 0.85em !important;
+  }
+  .matchortrash {
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+  .match-icon {
+    float: right;
+  }
+
+  .trash-icon {
+    float: left;
+  }
