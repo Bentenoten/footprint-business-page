@@ -1,6 +1,5 @@
 body {
     background-color: #f0f3f4 !important;
-    overflow: hidden;
     max-width: 375px;
 }
 
@@ -16,7 +15,8 @@ p {
     background: linear-gradient(to bottom right, rgba(252,152,66,1) 0%, rgba(232,121,71,1) 100%);
     color: #FFFFFF;
     font-weight: bold;
-    font-size: 1.2em;
+    text-transform: uppercase;
+    font-size: 1em;
     box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.18);
     border-radius: 50px 50px 50px 50px;
     border: none;
@@ -53,14 +53,38 @@ input.invoerveld {
     text-align: center;
 }
 
-.header {
+.header{
+    width:105%;
+    height:40%;
+    left:-3%;
+    position:absolute;
+    background-image: linear-gradient(#00559F, #0875D4);
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+}
+.header2{
+    width: 105%;
+    height: 43%;
+    left: -3%;
     position: absolute;
-    margin-top: -400px;
+    background-color: #1167B1;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+}
+.header-container{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
     top: 50%;
+    overflow: hidden;
     left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-  }
+    transform: translate(-50%,-50%);
+    z-index: -5;
+}
 
   .legecontainer {
       height: 400px;
@@ -89,18 +113,36 @@ input.invoerveld {
 
   /* Bedrijfspagina */
   .back-icon {
-    padding-top: 47px ;
-    padding-left: 40px !important;
+    padding-top: 12% ;
+    padding-left: 10% !important;
+  }
+
+  @media screen and (max-height: 690px) {
+    .back-icon {
+      padding-top: 8%;
+    }
+  }
+
+  .logo-score {
+    margin-bottom: 15px;
   }
 
   .logo img {
-  justify-content: center;
   border-radius: 100px;
-  width: 100%;
-  padding-left: 25%;
+  width: 75%;
+  box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.18);
+  /* opacity: 0.8; */
   }
 
-  .score div {
+  .score {
+    margin-top: 12.5%;
+  }
+
+  .score-point {
+    position: absolute !important;
+  }
+
+  .score-point div {
     border-radius: 100px;
     background-color: #FFFFFF;
     /* background: url(...); */
@@ -108,15 +150,20 @@ input.invoerveld {
     height: 29px;
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.18);
   }
 
-  .score p {
+  .score-point p {
     color: #1167B1 !important;
     font-weight: 400 !important;
     font-size: 1em;
     margin: 0px !important;
     /* text-align: center; */
+  }
+
+  .score-toelichting {
+    position: absolute !important;
   }
 
   .score-toelichting p {
@@ -134,17 +181,105 @@ input.invoerveld {
   .bedrijfsnaam p{
     text-align: center;
     color: #FFFFFF !important;
-    font-size: 0.85em !important;
-  }
-  .matchortrash {
-    display: flex;
-    align-items: center;
-    justify-content: center
-  }
-  .match-icon {
-    float: right;
+    font-size: 0.95em !important;
   }
 
-  .trash-icon {
-    float: left;
+  .matchortrash {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    display: flex;
+    align-items: center;
+  }
+
+  .matchortrash button {
+    padding: 0;
+  }
+
+  .data {
+    height: 375px;
+    background-color: #70A3D0;
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.18);
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .data h1 {
+    text-align: center;
+    color: #FFFFFF !important;
+  }
+
+  .data-input {
+    text-align: center;
+    background-color: #FFFFFF !important;
+    opacity: 0.8;
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.18);
+    margin: 11px;
+    padding: 5%;
+    height: 125px;
+    border-radius: 10px;
+  }
+
+  .data-input img {
+    text-align: center;
+    width: 95%;
+  }
+
+  .btn-extra {
+    text-align: center;
+    margin-bottom: 12%;
+  }
+
+  .btn-extra a {
+    color: #959595 !important;
+    text-transform: uppercase;
+    font-size: 0.8em;
+  }
+
+  /* Vergeet-me verzoek indienen pagina */
+  .link-underline p {
+    color: #707070;
+    font-size: 0.8em;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+  }
+
+  .options a {
+    padding-top: 30px;
+  }
+
+  .title h1 {
+      font-size: 1.5em; !important;
+      padding-top: 15%;
+  }
+
+  .title p {
+    text-align: center;
+    font-size: 1em !important;
+  }
+
+  .illustration {
+    padding-top: 4%;
+    padding-bottom: 4%;
+  }
+
+  .illustration img {
+    padding: 60px 20px 60px 20px;
+    margin: 50px 0 50px 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15pt;
+  }
+
+  .vergeet-me-verzoek-page {
+      background-color: #1167B1;
+      background-size: cover;
+      /* height: 100%; */
+      /* padding-bottom: 30%; */
+  }
+
+
+  .white a, p, h1{
+    color: #FFFFFF !important;
   }

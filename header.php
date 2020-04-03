@@ -9,9 +9,12 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Fauna+One&display=swap" rel="stylesheet">
+
+    <script src="script.js"></script>
 </head>
 
 <body>
-  <div class="header align-center">
-    <img src="img/circle.svg">
+  <div class="header-container">
+      <div class="header2"></div>
+      <div class="header"></div>
   </div>
