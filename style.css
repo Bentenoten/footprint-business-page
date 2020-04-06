@@ -6,7 +6,7 @@ body {
 p {
     font-family: Europa, sans-serif;
     font-weight: 100;
-    font-style: normal;;
+    font-style: normal;
     font-size: 1.2em;
     color: #303030;
  }
@@ -109,6 +109,7 @@ input.invoerveld {
     margin-left: auto;
     margin-right: auto;
     height: 100px;
+    width: 100px;
   }
 
   /* Bedrijfspagina */
@@ -127,7 +128,7 @@ input.invoerveld {
     margin-bottom: 15px;
   }
 
-  .logo img {
+  .logo-company img {
   border-radius: 100px;
   width: 75%;
   box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.18);
@@ -236,6 +237,51 @@ input.invoerveld {
     font-size: 0.8em;
   }
 
+  .choice-made {
+    opacity: 0.6 !important;
+  }
+
+  #snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #70A3D0;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 10px 10px 3px 10px;
+  position: fixed;
+  z-index: 1;
+  left: 33%;
+  }
+
+
+  #snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+
+  @-webkit-keyframes fadein {
+    from {top: 0; opacity: 0;}
+    to {top: 0px; opacity: 1;}
+  }
+
+  @keyframes fadein {
+    from {top: 0; opacity: 0;}
+    to {top: 0px; opacity: 1;}
+  }
+
+  @-webkit-keyframes fadeout {
+    from {top: 0px; opacity: 1;}
+    to {top: 0; opacity: 0;}
+  }
+
+  @keyframes fadeout {
+    from {top: 0px; opacity: 1;}
+    to {top: 0; opacity: 0;}
+  }
+
   /* Vergeet-me verzoek indienen pagina */
   .link-underline p {
     color: #707070;
@@ -260,9 +306,9 @@ input.invoerveld {
   }
 
   .illustration {
-    padding-top: 4%;
     padding-bottom: 4%;
   }
+
 
   .illustration img {
     padding: 60px 20px 60px 20px;
@@ -279,7 +325,76 @@ input.invoerveld {
       /* padding-bottom: 30%; */
   }
 
-
   .white a, p, h1{
     color: #FFFFFF !important;
   }
+
+/* Info vergeet-me verzoek pagina */
+.header-2{
+    width:105%;
+    height:48%;
+    left:-3%;
+    position:absolute;
+    background-image: linear-gradient(#00559F, #0875D4);
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+}
+
+.header2-2{
+    width: 105%;
+    height: 51%;
+    left: -3%;
+    position: absolute;
+    background-color: #1167B1;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+}
+
+.header-container-2 {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 50%;
+  overflow: hidden;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: -5;
+}
+
+.logo-Footprint img {
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  border: 3px solid #FFFFFF;
+}
+
+.info-vergeet-me {
+  margin-top: 22%;
+}
+
+.info {
+  background-color: #70A3D0;
+  box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.18);
+  border-radius: 10px;
+  border: 10px solid #70A3D0;
+  margin-bottom: 10%;
+}
+
+/* Vergeet-me verzoek ingediend pagina */
+.offline-notification {
+  transition: transform 0.3s;
+  transform: translateY(-100%) translateX(-50%);
+  position: fixed;
+  left: 50%;
+  background: linear-gradient(to bottom right, rgba(252,152,66,1) 0%, rgba(232,121,71,1) 100%);
+  color: #FFFFFF;
+  padding: 0.5em;
+  text-align: center;
+}
+
+.ingediend {
+  opacity: 0.6;
+}
