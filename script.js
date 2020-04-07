@@ -2,7 +2,35 @@ function snackbar() {
   var snack = document.getElementById("snackbar");
 
   snack.className = "show";
-  setTimeout(function(){ snack.className = snack.className.replace("show", ""); }, 3000);
+  setTimeout(function(){ snack.className = snack.className.replace("show", ""); }, 5000);
+}
+
+function dataVisualisation1() {
+  var data1 = document.getElementById("data-visualisation-1");
+
+  data1.className = "show";
+  setTimeout(function(){ data1.className = data1.className.replace("show", ""); }, 5000);
+}
+
+function dataVisualisation2() {
+  var data2 = document.getElementById("data-visualisation-2");
+
+  data2.className = "show";
+  setTimeout(function(){ data2.className = data2.className.replace("show", ""); }, 5000);
+}
+
+function dataVisualisation3() {
+  var data3 = document.getElementById("data-visualisation-3");
+
+  data3.className = "show";
+  setTimeout(function(){ data3.className = data3.className.replace("show", ""); }, 5000);
+}
+
+function dataVisualisation4() {
+  var data4 = document.getElementById("data-visualisation-4");
+
+  data4.className = "show";
+  setTimeout(function(){ data4.className = data4.className.replace("show", ""); }, 5000);
 }
 
 var match = document.getElementsByClassName("match-icon")[0];
@@ -13,8 +41,8 @@ function matchClick() {
     match.classList.remove("choice-made");
     trash.classList.remove("choice-made");
   } else {
-    match.classList.add("choice-made");
-    trash.classList.remove ("choice-made")
+    match.classList.remove("choice-made");
+    trash.classList.add("choice-made")
     snackbar();
   }
 }
@@ -24,8 +52,8 @@ function trashClick() {
     trash.classList.remove("choice-made");
     match.classList.remove("choice-made");
   } else {
-    trash.classList.add("choice-made");
-    match.classList.remove ("choice-made")
+    trash.classList.remove("choice-made");
+    match.classList.add("choice-made")
     location.href = "trash-vergeet-me-verzoek.php";
   }
 }
