@@ -37,7 +37,11 @@ var match = document.getElementsByClassName("match-icon")[0];
 var trash = document.getElementsByClassName("trash-icon")[0];
 
 function matchClick() {
-  if (match.classList.contains("choice-made")) {
+  if (!match.classList.contains("choice-made") && trash.classList.contains("choice-made") ) {
+    console.log("test");
+    match.classList.remove("choice-made");
+    trash.classList.remove("choice-made");
+  } else if (match.classList.contains("choice-made") && !trash.classList.contains("choice-made") ){
     match.classList.remove("choice-made");
     trash.classList.remove("choice-made");
   } else {
@@ -48,7 +52,11 @@ function matchClick() {
 }
 
 function trashClick() {
-  if (trash.classList.contains("choice-made")) {
+  if (!trash.classList.contains("choice-made") && match.classList.contains("choice-made") ) {
+    console.log("test");
+    trash.classList.remove("choice-made");
+    match.classList.remove("choice-made");
+  } else if (trash.classList.contains("choice-made") && !match.classList.contains("choice-made") ){
     trash.classList.remove("choice-made");
     match.classList.remove("choice-made");
   } else {

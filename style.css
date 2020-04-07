@@ -394,17 +394,6 @@ input.invoerveld {
 }
 
 /* Vergeet-me verzoek ingediend pagina */
-.offline-notification {
-  transition: transform 0.5s;
-  transform: translateY(-100%) translateX(-50%);
-  position: fixed;
-  left: 50%;
-  background: linear-gradient(to bottom right, rgba(252,152,66,1) 0%, rgba(232,121,71,1) 100%);
-  color: #FFFFFF;
-  padding: 0.5em;
-  text-align: center;
-}
-
 .ingediend {
   opacity: 0.6;
 }

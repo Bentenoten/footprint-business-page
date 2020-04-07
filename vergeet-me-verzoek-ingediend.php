@@ -23,10 +23,6 @@
       <p>Het bedrijf Coolblue is toegevoegd aan je trashes en er is een vergeet-me verzoek ingediend.</p>
     </div>
 
-    <div class="offline-notification">
-      <p>Het vergeet-me-verzoek is ingediend en het bedrijf Coolblue is toegevoegd aan de trashlist.</p>
-    </div>
-
     <div class="row back">
       <div class="col-xs-12 back-icon">
         <a href="#"> <img src="img/icon-back.svg" alt="icon-back"> </a>

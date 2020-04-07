@@ -1,13 +1,31 @@
-<?php include "header.php"?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bedrijfspagina</title>
+    <link rel="stylesheet" href="https://use.typekit.net/irk3rsu.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fauna+One&display=swap" rel="stylesheet">
+</head>
+
+<body  onload="trashSnackbar();">
+
+  <div class="header-container">
+      <div class="header2-2"></div>
+      <div class="header-2"></div>
+  </div>
 
   <div class="container">
     <div id="snackbar">
-      <p>Het bedrijf Coolblue is toegevoegd aan je matches.</p>
+      <p>Het vergeet-me-verzoek is voor het bedrijf Coolblue is ingediend.</p>
     </div>
 
     <div class="row back">
       <div class="col-xs-12 back-icon">
-        <a href="javascript:history.back()"> <img src="img/icon-back.svg" alt="icon-back"> </a>
+        <a href="#"> <img src="img/icon-back.svg" alt="icon-back"> </a>
       </div>
     </div>
 
@@ -28,16 +46,16 @@
     </div>
 
     <div class="row matchortrash">
-      <div class="col-xs-3 match">
-        <button class="match-icon" onclick="matchClick();" href="#"> <img src="img/icon-match.svg" alt="icon-match"> </button>
-      </div>
-      <div class="col-xs-6 bedrijfsnaam ">
+      <!-- <div class="col-xs-3 match">
+        <button class="match-icon choice-made" onclick="matchClick();" href="#"> <img src="img/icon-match.svg" alt="icon-match"> </button>
+      </div> -->
+      <div class="col-xs-offset-3 col-xs-6 bedrijfsnaam ">
         <h1>Coolblue</h1>
         <p>Online elektronicawinkel</p>
       </div>
-      <div class="col-xs-3 trash">
+      <!-- <div class="col-xs-3 trash">
         <button class="trash-icon" onclick="trashClick();"> <img src="img/icon-trash.svg" alt="icon-trash"> </button>
-      </div>
+      </div> -->
     </div>
 
     <div class="row visualisation">
@@ -86,7 +104,7 @@
 
     <div class="row vergeet-me-verzoek">
       <div class="col-xs-offset-1 col-xs-10">
-        <button class="button" onclick="location.href='vergeet-me-verzoek.php'" type="button" name="button">Vergeet-me verzoek indienen</button>
+        <button class="button ingediend" onclick="location.href='vergeet-me-verzoek.php'" type="button" name="button">Vergeet-me verzoek ingediend</button>
       </div>
       <div class="col-xs-12 btn-extra">
         <a href="info-vergeet-me-verzoek.php">Wat is een vergeet-me verzoek?</a>

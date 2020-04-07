@@ -28,16 +28,16 @@
     </div>
 
     <div class="row matchortrash">
-      <div class="col-xs-3 match">
+      <!-- <div class="col-xs-3 match">
         <button class="match-icon" onclick="matchClick();" href="#"> <img src="img/icon-match.svg" alt="icon-match"> </button>
-      </div>
-      <div class="col-xs-6 bedrijfsnaam ">
+      </div> -->
+      <div class="col-xs-offset-3 col-xs-6 bedrijfsnaam ">
         <h1>Coolblue</h1>
         <p>Online elektronicawinkel</p>
       </div>
-      <div class="col-xs-3 trash">
+      <!-- <div class="col-xs-3 trash">
         <button class="trash-icon" onclick="trashClick();"> <img src="img/icon-trash.svg" alt="icon-trash"> </button>
-      </div>
+      </div> -->
     </div>
 
     <div class="row visualisation">
@@ -86,7 +86,7 @@
 
     <div class="row vergeet-me-verzoek">
       <div class="col-xs-offset-1 col-xs-10">
-        <button class="button" onclick="location.href='vergeet-me-verzoek.php'" type="button" name="button">Vergeet-me verzoek indienen</button>
+        <button class="button" onclick="location.href='gast-vergeet-me-verzoek.php'" type="button" name="button">Vergeet-me verzoek indienen</button>
       </div>
       <div class="col-xs-12 btn-extra">
         <a href="info-vergeet-me-verzoek.php">Wat is een vergeet-me verzoek?</a>
