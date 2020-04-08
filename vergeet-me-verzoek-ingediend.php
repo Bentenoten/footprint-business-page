@@ -19,8 +19,12 @@
   </div>
 
   <div class="container">
-    <div id="snackbar">
-      <p>Het bedrijf Coolblue is toegevoegd aan je trashes en er is een vergeet-me verzoek ingediend.</p>
+    <div class="row notification-snackbar">
+      <div class="col-xs-12">
+        <div id="snackbar">
+          <p>Het bedrijf Coolblue is toegevoegd aan je trashes en er is een vergeet-me verzoek ingediend.</p>
+        </div>
+      </div>
     </div>
 
     <div class="row back">
@@ -104,7 +108,7 @@
 
     <div class="row vergeet-me-verzoek">
       <div class="col-xs-offset-1 col-xs-10">
-        <button class="button ingediend" onclick="location.href='vergeet-me-verzoek.php'" type="button" name="button">Vergeet-me verzoek ingediend</button>
+        <button class="button ingediend" type="button" name="button">Vergeet-me verzoek ingediend</button>
       </div>
       <div class="col-xs-12 btn-extra">
         <a href="info-vergeet-me-verzoek.php">Wat is een vergeet-me verzoek?</a>

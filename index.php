@@ -1,8 +1,12 @@
 <?php include "header.php"?>
 
   <div class="container">
-    <div id="snackbar">
-      <p>Het bedrijf Coolblue is toegevoegd aan je matches.</p>
+    <div class="row notification-snackbar">
+      <div class="col-xs-12">
+        <div id="snackbar">
+          <p>Het bedrijf Coolblue is toegevoegd aan je matches.</p>
+        </div>
+      </div>
     </div>
 
     <div class="row back">

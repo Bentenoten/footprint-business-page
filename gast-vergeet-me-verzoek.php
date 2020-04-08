@@ -24,7 +24,7 @@
 
   <div class="row options">
     <div class="col-xs-offset-1 col-xs-10">
-      <button class="button" onclick="location.href='vergeet-me-verzoek-ingediend.php'">Ja, ik wil een vergeet-me verzoek indienen</button>
+      <button class="button" onclick="location.href='gast-vergeet-me-verzoek-ingediend.php'">Ja, ik wil een vergeet-me verzoek indienen</button>
     </div>
     <div class="col-xs-12 btn-extra white">
       <a href="javascript:history.back()">Nee, geen vergeet-me verzoek indienen</a>

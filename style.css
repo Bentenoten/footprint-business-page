@@ -1,6 +1,6 @@
 body {
     background-color: #f0f3f4 !important;
-    max-width: 375px;
+    min-width: 375px;
 }
 
 p {
@@ -118,7 +118,7 @@ input.invoerveld {
     padding-left: 10% !important;
   }
 
-  @media screen and (max-height: 690px) {
+  @media screen and (max-height: 740px) {
     .back-icon {
       padding-top: 8%;
     }
@@ -135,8 +135,33 @@ input.invoerveld {
   /* opacity: 0.8; */
   }
 
+    @media screen and (max-height: 740px) {
+      .logo-company img {
+        width: 70%;
+      }
+    }
+
+  @media screen and (max-height: 690px) {
+    .logo-company img {
+      width: 60%;
+    }
+  }
+
+
   .score {
     margin-top: 12.5%;
+  }
+
+  @media screen and (max-height: 740px) {
+    .score {
+      margin-top: 11.5%;
+    }
+  }
+
+  @media screen and (max-height: 690px) {
+    .score {
+      margin-top: 9.5%;
+    }
   }
 
   .score-point {
@@ -208,9 +233,23 @@ input.invoerveld {
     padding-bottom: 5%;
   }
 
+  @media screen and (max-height: 740px) {
+    .data {
+      margin-top: 10px;
+      margin-bottom: 0px;
+      padding-bottom: 1%;
+    }
+  }
+
   .data h1 {
     text-align: center;
     color: #FFFFFF !important;
+  }
+
+  @media screen and (max-height: 740px) {
+    .data h1 {
+      margin-bottom: 0px;
+    }
   }
 
   .data-input {
@@ -218,10 +257,16 @@ input.invoerveld {
     background-color: #C5D9EC !important;
     /* opacity: 0.8; */
     box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.18);
-    margin: 11px;
+    margin: 4%;
     height: 125px;
     border-radius: 10px;
     padding: 5%;
+  }
+
+  @media screen and (max-height: 690px) {
+    .data-input {
+      height: 110px;
+    }
   }
 
   .data-input p {
@@ -241,6 +286,12 @@ input.invoerveld {
     margin-bottom: 12%;
   }
 
+  @media screen and (max-height: 740px) {
+    .btn-extra {
+      margin-bottom: 7%;
+    }
+  }
+
   .btn-extra a {
     color: #959595 !important;
     text-transform: uppercase;
@@ -253,7 +304,7 @@ input.invoerveld {
 
   #snackbar {
   visibility: hidden;
-  min-width: 250px;
+  min-width: 100%;
   margin-left: -125px;
   background-color: #70A3D0;
   color: #fff;
@@ -265,6 +316,11 @@ input.invoerveld {
   left: 33%;
   }
 
+  @media screen and (max-height: 740px) {
+    #snackbar {
+      margin-left: -138px;
+    }
+  }
 
   #snackbar.show {
     visibility: visible;
@@ -306,8 +362,14 @@ input.invoerveld {
   }
 
   .title h1 {
-      font-size: 1.5em; !important;
+      font-size: 1.5em !important;
       padding-top: 15%;
+  }
+
+  @media screen and (max-height: 740px) {
+    .title h1{
+      padding-top: 5%;
+    }
   }
 
   .title p {
@@ -319,6 +381,11 @@ input.invoerveld {
     padding-bottom: 4%;
   }
 
+  @media screen and (max-height: 740px) {
+    .illustration{
+      padding-bottom: 0px;
+    }
+  }
 
   .illustration img {
     padding: 60px 20px 60px 20px;
@@ -326,6 +393,18 @@ input.invoerveld {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 15pt;
+  }
+
+  @media screen and (max-height: 740px) {
+    .illustration img {
+      margin: 12% 0 11% 0;
+    }
+  }
+
+  @media screen and (max-height: 690px) {
+    .illustration img {
+      margin: 7% 0 6% 0;
+    }
   }
 
   .vergeet-me-verzoek-page {
@@ -443,6 +522,13 @@ height: 126px;
 width: 120px;
 border-radius: 10px;
 left: 49%;
+}
+
+@media screen and (max-height: 690px) {
+  #data-visualisation-2, #data-visualisation-4, #data-visualisation-1, #data-visualisation-3 {
+    height: 111px;
+    font-size: 8px;
+  }
 }
 
 #data-visualisation-1.show, #data-visualisation-2.show, #data-visualisation-3.show, #data-visualisation-4.show{
