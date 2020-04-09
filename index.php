@@ -59,7 +59,7 @@
           </div>
           <div class="col-xs-5">
             <div id="data-visualisation-2" >
-              <p>Het bedrijf Coolblue krijgt een klantenbeoordeling van een <br> <b> 9,1</b>. <br> </p>
+              <p>Het bedrijf Coolblue krijgt een klantenbeoordeling van een <b> 9,1</b>.  </p>
             </div>
           </div>
           <div class="col-xs-5 data-input" onclick="dataVisualisation2();">
@@ -72,7 +72,7 @@
           </div>
           <div class="col-xs-5">
             <div id="data-visualisation-3" >
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+              <p>Van het bedrijf Coolblue is <b>geen</b> overdraagbaar bestand van gegevens beschikbaar.</p>
             </div>
           </div>
           <div class="col-xs-5">
